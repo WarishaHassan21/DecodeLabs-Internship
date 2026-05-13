@@ -1,121 +1,40 @@
-# AI Data Classification Project
+# Rule-Based AI Chatbot 🤖
 
-## 📌 Project Overview
-This project is developed as part of the Artificial Intelligence Internship at DecodeLabs.  
-The goal of this project is to build a basic supervised machine learning model capable of classifying data using AI techniques.
+This project is a simple Rule-Based AI Chatbot developed using Python as part of an Artificial Intelligence internship task by DecodeLabs.
 
-The project uses the famous Iris Dataset and Logistic Regression algorithm to train and test the classification model.
-
----
+## 📌 Project Objective
+The goal of this project is to understand the fundamentals of Artificial Intelligence using:
+- Control Flow
+- Decision-Making Logic
+- If-Else Statements
+- Continuous Loops
 
 ## 🚀 Features
-- Load and analyze dataset
-- Split data into training and testing sets
-- Train AI classification model
-- Predict output classes
-- Evaluate model accuracy
-- Generate classification report
+- Handles greeting messages
+- Responds to basic user questions
+- Handles exit commands
+- Runs continuously until the user exits
 
----
-
-## 🧠 Technologies Used
+## 🛠 Technologies Used
 - Python
-- Pandas
-- Scikit-learn
 
----
-
-## 📂 Dataset
-The project uses the built-in Iris Dataset provided by Scikit-learn.
-
-Dataset contains:
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
-
-Target Classes:
-- Setosa
-- Versicolor
-- Virginica
-
----
-
-## ⚙️ Machine Learning Algorithm
-This project uses:
-
-### Logistic Regression
-A supervised learning classification algorithm used for predicting categorical outputs.
-
----
-
-## 📊 Workflow
-1. Load Dataset
-2. Prepare Features and Labels
-3. Split Dataset
-4. Train Model
-5. Test Model
-6. Evaluate Accuracy
-7. Predict Custom Input
-
----
-
-## ▶️ Installation
-
-Clone the repository:
+## ▶️ How to Run
+1. Install Python on your system
+2. Download or clone this repository
+3. Open terminal or command prompt
+4. Run the following command:
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-```
+python Task1.py
 
-Install dependencies:
 
-```bash
-pip install pandas scikit-learn
-```
+🤖 Chatbot: Hello! Type 'bye' to exit.
 
-Run the project:
+You: hi
+Bot: Hello! How can I assist you?
 
-```bash
-python app.py
-```
+You: how are you
+Bot: I am fine. Thank you!
 
----
-
-## 📈 Output
-The model provides:
-- Prediction results
-- Accuracy score
-- Classification report
-
----
-
-## 🎯 Learning Outcomes
-Through this project, I learned:
-- Basics of Supervised Learning
-- Data Classification
-- Model Training and Testing
-- AI Workflow
-- Accuracy Evaluation
-
----
-
-## 📸 Sample Output
-
-```text
-Model Accuracy: 100%
-
-Predicted Flower: setosa
-```
-
----
-
-## 👩‍💻 Author
-Warisha Hassan
-
-Artificial Intelligence Intern at DecodeLabs
-
----
-
-## 🔗 GitHub
-Upload this project to GitHub to showcase your AI and Machine Learning skills.
+You: bye
+Bot: Goodbye! 👋
