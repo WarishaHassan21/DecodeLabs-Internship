@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎬 AI Recommendation System</h1>
+
+    <form method="POST">
+
+        <label><input type="checkbox" name="genre" value="Action"> Action</label>
+        <label><input type="checkbox" name="genre" value="Comedy"> Comedy</label>
+        <label><input type="checkbox" name="genre" value="Romance"> Romance</label>
+        <label><input type="checkbox" name="genre" value="Sci-Fi"> Sci-Fi</label>
+        <label><input type="checkbox" name="genre" value="Horror"> Horror</label>
+        <label><input type="checkbox" name="genre" value="Drama"> Drama</label>
+
+        <br><br>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    {% if recommendations %}
+        <h2>Recommended Movies</h2>
+
+        <ul>
+            {% for movie, score in recommendations %}
+                <li>
+                    {{ movie }} ⭐ Match Score: {{ score }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
+</body>
+</html>
